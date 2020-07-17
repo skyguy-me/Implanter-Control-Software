@@ -1,3 +1,11 @@
 [ProjectWindow_Data]
-ProjectExplorer.ClassicPosition[String] = "25,2,918,1278"
+ProjectExplorer.ClassicPosition[String] = "33,1,880,845"
+
+[AB_Cache_{BBFC5AFB-B4CF-4AAC-B68A-838217DB2FEC}]
+Cache_Path[Path] Line0001 = "/C/Users/CIBA-Nanolab/AppData/Local/Temp/AB_Cache_"
+Cache_Path[Path] Line0002 = "{BBFC5AFB-B4CF-4AAC-B68A-838217DB2FEC}.txt"
+
+[AB_Cache_{B525D055-51E7-4485-A568-FE0694C30712}]
+Cache_Path[Path] Line0001 = "/C/Users/CIBA-Nanolab/AppData/Local/Temp/AB_Cache_"
+Cache_Path[Path] Line0002 = "{B525D055-51E7-4485-A568-FE0694C30712}.txt"
 
