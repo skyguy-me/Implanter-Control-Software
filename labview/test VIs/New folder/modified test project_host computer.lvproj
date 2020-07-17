@@ -16,49 +16,7 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Untitled 1.vi" Type="VI" URL="../Untitled 1.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
-		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Untitled 1" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{D768CABA-B96B-41BF-BCC2-7658C026237A}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{EBA3FFC3-85DA-4001-87E2-592BFA758220}</Property>
-				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="App_serverType" Type="Int">0</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{BBFC5AFB-B4CF-4AAC-B68A-838217DB2FEC}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Untitled 1</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Untitled 1</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{B525D055-51E7-4485-A568-FE0694C30712}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">testApp.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Untitled 1/testApp.exe</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Untitled 1/data</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{722E9671-F8D3-4FA6-BBAC-37F457D8BF28}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Untitled 1.vi</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_companyName" Type="Str">National University of Singapore</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Untitled 1</Property>
-				<Property Name="TgtF_internalName" Type="Str">Untitled 1</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2020 National University of Singapore</Property>
-				<Property Name="TgtF_productName" Type="Str">Untitled 1</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{0B0099FD-CBEC-4A1D-A21B-145E325FB53C}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">testApp.exe</Property>
-				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
-			</Item>
-		</Item>
+		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="NI-cRIO-9054-01EC30CF" Type="RT CompactRIO">
 		<Property Name="alias.name" Type="Str">NI-cRIO-9054-01EC30CF</Property>
@@ -999,6 +957,15 @@ AddOutputFilter chunkFilter
 </Property>
 						<Property Name="FPGA.PersistentID" Type="Str">{8651B8E0-BDB0-4F52-9065-3DE43D6B2A4D}</Property>
 					</Item>
+					<Item Name="Mod4/AO2" Type="Elemental IO">
+						<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod4/AO2</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+						<Property Name="FPGA.PersistentID" Type="Str">{347D1FB9-4CDC-47ED-8B23-54B86B461072}</Property>
+					</Item>
 					<Item Name="Mod4/AO3" Type="Elemental IO">
 						<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
    <Attribute name="resource">
@@ -1351,16 +1318,11 @@ AddOutputFilter chunkFilter
 					<Property Name="cRIOModule.NumSyncRegs" Type="Str">11111111</Property>
 					<Property Name="FPGA.PersistentID" Type="Str">{5D347151-88AF-4C31-A9D6-4C6BCC0CD418}</Property>
 				</Item>
-				<Item Name="Mod4/AO2" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="resource">
-   <Value>/crio_Mod4/AO2</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{A4CAC98F-DF32-4919-808B-C81C5F857AB6}</Property>
+				<Item Name="Dependencies" Type="Dependencies">
+					<Item Name="vi.lib" Type="Folder">
+						<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
+					</Item>
 				</Item>
-				<Item Name="Dependencies" Type="Dependencies"/>
 				<Item Name="Build Specifications" Type="Build">
 					<Item Name="FPGA_controlled VI" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
 						<Property Name="AllowEnableRemoval" Type="Bool">false</Property>
